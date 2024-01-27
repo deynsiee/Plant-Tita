@@ -1,0 +1,256 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Verdana, sans-serif;
+}
+
+html{
+	font-size: 10px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+a:hover{
+    color: gold;
+}
+h1{
+	font-size: 2.4rem;
+
+}
+
+h3{
+	font-size: 2rem;
+	padding-top: 20px;
+
+}
+h4{
+	font-size: 1.5rem;
+	padding-top: 10px;
+}
+p{
+	font-size: 1.5rem;
+}
+
+header{
+	width: 100%;
+	height: 5rem;
+	background-color: seagreen;
+	position: fixed;
+	top: 0;
+	z-index: 333;
+}
+
+#back a{
+
+	padding: 5px;
+	border: 2px solid gold;
+	background-color: gold;
+	text-align: center;
+	color: gray;
+	font-size: 1rem;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#back a:hover {
+	color: green;
+}
+.container{
+	width: 96%;
+	max-width: 117rem;
+	margin: 0 auto;
+}
+
+.navbar{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.navbar h1{
+	text-transform: uppercase;
+	color: whitesmoke;
+	font-weight: 600;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.navbar ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.navbar ul a{
+	font-size: 1.2rem;
+	padding: 1.5rem;
+	text-transform: uppercase;
+	color: whitesmoke;
+	font-weight: 400;
+	letter-spacing: 2px;
+	transition: all ease 0.4s;
+}
+
+.navbar ul a:hover{
+	color: gold ;
+	transition: all ease 0.3s;
+}
+
+
+.hero1{
+	max-width: 114rem;
+	height: 40rem;
+	background: url("images/header-blog1.png") 
+	no-repeat center center / cover;
+	margin:  5rem auto;
+}
+
+.hero2{
+	max-width: 114rem;
+	height: 40rem;
+	background: url("images/header-blog2.png") 
+	no-repeat center center / cover;
+	margin:  5rem auto;
+}
+.hero3{
+	max-width: 114rem;
+	height: 40rem;
+	background: url("images/header-blog3.png") 
+	no-repeat center center / cover;
+	margin:  5rem auto;
+}
+
+
+
+
+
+main{
+	width: 100%;
+	max-width: 114rem;
+	background-color:#BFEEB7;
+	margin: 0 auto;
+	padding: 5rem;
+	border-radius: 1.5rem;
+
+}
+
+main h2{
+	font-size: 3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+main .profile-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem 0;
+}
+
+main .profile-container .profile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .profile-container .profile .img-container{
+	width: 6rem;
+	height: 6rem;
+	background: url("images/author.jpg")
+	no-repeat center center / cover;
+	border-radius: 0.5rem;
+}
+
+main .profile-container .profile .text{
+	margin: 0 1rem;
+	color: #5b5963;
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+
+.profile .text h3{
+	text-transform: uppercase;
+}
+
+.btn{
+	display: inline-block;
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	padding: 0.3rem 1.5rem;
+	background-color: seagreen;
+	border-radius: 0.2rem;
+}
+
+main p{
+	color: #232323;
+	margin: 1rem 0;
+}
+main .content h1{
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	font-size: 5rem;
+	color: white;
+	text-shadow: 1px 5px 150px black;
+}
+main .content h4{
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: green;
+	margin: 2rem 0;
+}
+
+main .content h3{
+	text-transform: uppercase;
+	font-weight: 600;
+	color: green;
+	margin: 2rem 0;
+}
+
+footer{
+	background-color: seagreen;
+	padding: 3rem 0;
+	text-align: center;
+}
+
+
+.icons{
+	text-align: center;
+}
+
+.icons .social{
+	font-size: 3rem;
+	color: whitesmoke;
+	padding: 1rem;
+	transition: all ease 0.4s;
+}
+
+.icons .social i:hover{
+	color: limegreen;
+	cursor: pointer;
+}
+
+.icons .copyright{
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	color: whitesmoke;
+	margin: 2 rem 0;
+}

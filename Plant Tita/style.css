@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+html{
+    font-size: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+a:hover{
+    color: gold;
+}
+h1{
+    font-size: 2.4rem;
+
+}
+
+h3{
+    font-size: 2rem;
+    padding-top: 20px;
+
+}
+h4{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+p{
+    font-size: 1.5rem;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+section{
+    padding: 20px;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: seagreen;
+    position: fixed;
+    top: 0;
+    z-index: 333;
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.navbar h1{
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar ul a{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: all ease 0.4s;
+}
+
+.navbar ul a:hover{
+    color: gold ;
+    transition: all ease 0.3s;
+}
+
+.design{
+    padding: 4.5rem 0;
+}
+
+.title{
+    text-align: center;
+    padding: 1rem 0;
+    padding-top: 40px;
+}
+
+.title h2{
+    font-size: 2.4rem;
+}
+
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+
+.design-content{
+    margin: 2rem 0;
+}
+
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.design-img:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.design-img img{
+    transition: all 0.5s ease;
+
+}
+
+.design-item:hover img{
+    transform: scale(1.2);
+}
+
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    padding: 0.25rem 1rem;
+}
+
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.design-title a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: seagreen;
+    font-weight: 600;
+}
+
+.design-title a:hover{
+    color: black;
+}
+footer{
+    background-color: seagreen;
+    padding: 0.3rem 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.icons{
+    text-align: center;
+}
+
+.icons .social{
+    font-size: 3rem;
+    color: whitesmoke;
+    padding: 1rem;
+    transition: all ease 0.4s;
+}
+
+.icons .social i:hover{
+    color: limegreen;
+    cursor: pointer;
+}
+
+.icons .copyright{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    margin: 2 rem 0;
+}
+
+
+@media screen and (min-width:  768px){
+    .navbar .contain{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
